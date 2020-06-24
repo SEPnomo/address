@@ -54,7 +54,10 @@ public class AddBL extends HttpServlet {
 			errmsg=ERRMSG_TEL01 + "<BR>" ;
 
         //リクエスト情報を作成
-//		request.
+		request.setAttribute("name",name);
+		request.setAttribute("address",address);
+		request.setAttribute("tel",tel);
+		request.setAttribute("errmsg",errmsg);
 
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
