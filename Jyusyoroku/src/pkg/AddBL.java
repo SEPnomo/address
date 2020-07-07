@@ -41,7 +41,6 @@ public class AddBL extends HttpServlet {
 		final String ERRMSG_ADDRESS02="住所は必須項目です住所は必須項目です";
 		final String ERRMSG_TEL01="電話番号は「000-0000-0000」の形式で入力してください";
 
-		//
 		if(40 < name.getBytes().length) {
 			errmsg=ERRMSG_NAME01 +  "<BR>";
 		}else if (name.getBytes().length==0) {
